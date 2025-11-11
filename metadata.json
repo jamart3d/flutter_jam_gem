@@ -1,0 +1,7 @@
+{
+  "name": "Flutter Jam Code Assistant",
+  "description": "An AI-powered assistant to help you write, debug, and understand Flutter code. Paste your project structure, view your files, and chat with Gemini for expert guidance.  Similar to Gemini Canvas.",
+  "requestFramePermissions": [
+    "clipboard-read"
+  ]
+}

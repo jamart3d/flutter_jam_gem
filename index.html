@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flutter Code Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "jszip": "https://aistudiocdn.com/jszip@^3.10.1"
+  }
+}
+</script>
+<style>
+  @keyframes animate-rgb-up {
+    0% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  .animate-rgb-up {
+    animation: animate-rgb-up 3s linear infinite;
+  }
+
+  @keyframes animate-fill-green {
+    from {
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+    to {
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+  }
+  .animate-fill-green {
+    animation: animate-fill-green 0.4s ease-out forwards;
+  }
+  
+  @keyframes breathe-green {
+    0%, 100% {
+      box-shadow: 0 0 2px rgba(16, 185, 129, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 8px 2px rgba(16, 185, 129, 0.7);
+    }
+  }
+  .animate-breathe-green {
+    animation: breathe-green 2.5s ease-in-out infinite;
+  }
+</style>
+</head>
+  <body class="bg-white text-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
